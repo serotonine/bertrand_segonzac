@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Contains bs_migrate.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bs_migrate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bs_migrate module.
+    case 'help.page.bs_migrate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Migrate from D7') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+/**
+ * Implements hook_install().
+ */
+ function bs_migrate_install() {
+  $paints = array(
+  'Contrefaçons et déploiements',
+  'Incident domestique',
+  'Observations sonores',
+  'Let\'s print',
+  'Photographies',
+  'Stereo-Hands, La fabrique des arts, école des beaux-arts de Carcasonne-agglo.',
+  'Paysages',
+  'Racks',
+  'A contresens de l\'oubli',
+  'Racks 2',
+  'Matières à Récits 2.0',
+  'Impression libre',
+  'Une traversée singulière',
+  'Une traversée singulière',
+  'Résidence avec Lucie Laforentie, Thiès, Sénégal',
+  'Extractions',
+  'Résidences',
+  'Et moi j\'habite seule dans cette grande baraque',
+  'Place Publique',
+  'Place Publique, 2013.',
+  'Du début à la fin, 2013. Les Abattoirs, Toulouse.',
+  'Paysages',
+  'Performances',
+  'Perfect-Perfect, The Tate Croquette, 2011.',
+  'Perfect-Perfect, Racks, 2011.',
+  'Place Publique, 2013.',
+  'Perfect-Perfect, Racks',
+  'Perfect-Perfect , The Tate Croquette',
+  'Photographies',
+  );
+    foreach($paints as $title){
+      $node = \Drupal::entityTypeManager()->getStorage('node')->create([
+        'type'       => 'medias',
+        'title'      => $title,
+      ]);
+      $node->save();
+    }
+}
+
+

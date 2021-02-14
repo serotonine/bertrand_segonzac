@@ -1,0 +1,5 @@
+name: 'bs_migrate'
+type: module
+description: 'Migrate from D7'
+core: 8.x
+package: 'bertrand_segonzac'

@@ -1,0 +1,19 @@
+name: Bertrand Segonzac
+type: theme
+description: Bertrand Segonzac theme
+# dependencies:
+core: 8.x
+core_version_requirement: ^8 || ^9
+php: 7.3
+version: '1.0'
+# see https://www.drupal.org/node/2216195#override-extend
+# librairies:
+# librairies-override:
+# librairies-extend:
+base-theme: stable
+# logo: img/logo.png
+# screenshot: 588px x 438px // screenshot.png
+# regions see https://www.drupal.org/node/2469113
+# regions-hidden
+features:
+  favicon: true

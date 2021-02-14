@@ -1,0 +1,13 @@
+{
+    "name": "bs_migrate",
+    "type": "drupal-module",
+    "description": "Migrate from D7",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/bs_migrate",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/bs_migrate",
+        "source": "http://cgit.drupalcode.org/bs_migrate",
+    },
+}
