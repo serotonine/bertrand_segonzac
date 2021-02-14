@@ -56,7 +56,6 @@ function bs_migrate_help($route_name, RouteMatchInterface $route_match) {
   'Perfect-Perfect, Racks',
   'Perfect-Perfect, The Tate Croquette',
   'Photographies',
-  'Robert',
   );
     foreach($paints as $title){
       $node = \Drupal::entityTypeManager()->getStorage('node')->create([
