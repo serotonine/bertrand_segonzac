@@ -54,7 +54,7 @@ function bs_migrate_help($route_name, RouteMatchInterface $route_match) {
   'Perfect-Perfect, Racks, 2011.',
   'Place Publique, 2013.',
   'Perfect-Perfect, Racks',
-  'Perfect-Perfect , The Tate Croquette',
+  'Perfect-Perfect, The Tate Croquette',
   'Photographies',
   );
     foreach($paints as $title){
