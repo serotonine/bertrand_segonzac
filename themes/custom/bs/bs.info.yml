@@ -1,6 +1,6 @@
 name: Bertrand Segonzac
 type: theme
-description: Bertrand Segonzac theme
+description: Bertrand Segonzac Theme
 # dependencies:
 core: 8.x
 core_version_requirement: ^8 || ^9
