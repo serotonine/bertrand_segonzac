@@ -6,7 +6,7 @@ core: 8.x
 core_version_requirement: ^8 || ^9
 php: 7.3
 version: '1.0'
-# see https://www.drupal.org/node/2216195#override-extend
+# see https://www.drupal.org/node/2216195#override-extend robert the great
 # librairies:
 # librairies-override:
 # librairies-extend:
